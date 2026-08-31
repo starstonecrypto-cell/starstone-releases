@@ -1,0 +1,19 @@
+{
+  "name": "Starstone Guardian Crest — Season 0",
+  "description": "A non-transferable record of ranked activity in Starstone. It grants no in-game effect of any kind. Values are served live from Starstone and change as you play, so this record is not immutable.",
+  "image": "https://raw.githubusercontent.com/starstonecrypto-cell/starstone-releases/main/crest/free.png",
+  "external_url": "https://starstone.game/crest/season-0",
+  "attributes": [
+    { "trait_type": "Season", "value": "season-0" },
+    { "trait_type": "Tier", "value": "Free" },
+    { "trait_type": "Lifetime Renown", "value": 0 },
+    { "trait_type": "Season Renown", "value": 0 },
+    { "trait_type": "Season Wins", "value": 0 }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [{ "uri": "https://raw.githubusercontent.com/starstonecrypto-cell/starstone-releases/main/crest/free.png", "type": "image/png" }],
+    "metadataVersion": 2,
+    "soulbound": true
+  }
+}
