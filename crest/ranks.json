@@ -1,15 +1,51 @@
 {
-  "_comment": "Canonical Starstone rank ladder. Ratings are Glicko-2 centred at 1000 (see Backend/supabase_setup_mmr_additive_only.sql). Trainee is a PLACEMENT state, not a rating band, so a player who has a bad week is never permanently labelled a beginner. Bands are absolute thresholds, never a position against other players -- a rank that moves because other people played is not a record.",
-  "version": 1,
+  "_comment": "Canonical Starstone rank ladder. Thresholds are the CLIENT's, verbatim from MainMenuController.BattleProfileRankTier -- the game is what a player sees every day, so the token defers to it. Trainee is the one deliberate difference: the client treats it as a sub-900 rating band, but the Crest reads peak_rating, which starts at 1000 and only rises, so that band is unreachable on a token. On the Crest it means 'has not placed yet'. Ranks are absolute thresholds, never a position against other players -- a rank that moves because other people played is not a record.",
+  "version": 2,
   "updated": "2026-09-02",
   "placementGames": 5,
   "ranks": [
-    { "key": "trainee",     "name": "Trainee",     "minRating": null, "image": "ranks/rank01_trainee.png",     "note": "fewer than 5 rated games" },
-    { "key": "bronze",      "name": "Bronze",      "minRating": 0,    "image": "ranks/rank02_bronze.png" },
-    { "key": "silver",      "name": "Silver",      "minRating": 1150, "image": "ranks/rank03_silver.png" },
-    { "key": "gold",        "name": "Gold",        "minRating": 1400, "image": "ranks/rank04_gold.png" },
-    { "key": "guardian",    "name": "Guardian",    "minRating": 1650, "image": "ranks/rank05_guardian.png" },
-    { "key": "legend",      "name": "Legend",      "minRating": 1900, "image": "ranks/rank06_legend.png" },
-    { "key": "grandmaster", "name": "Grandmaster", "minRating": 2150, "image": "ranks/rank07_grandmaster.png" }
+    {
+      "key": "trainee",
+      "name": "Trainee",
+      "minRating": null,
+      "image": "ranks/rank01_trainee.png",
+      "note": "fewer than 5 rated games"
+    },
+    {
+      "key": "bronze",
+      "name": "Bronze",
+      "minRating": 0,
+      "image": "ranks/rank02_bronze.png"
+    },
+    {
+      "key": "silver",
+      "name": "Silver",
+      "minRating": 1200,
+      "image": "ranks/rank03_silver.png"
+    },
+    {
+      "key": "gold",
+      "name": "Gold",
+      "minRating": 1500,
+      "image": "ranks/rank04_gold.png"
+    },
+    {
+      "key": "guardian",
+      "name": "Guardian",
+      "minRating": 1900,
+      "image": "ranks/rank05_guardian.png"
+    },
+    {
+      "key": "legend",
+      "name": "Legend",
+      "minRating": 2400,
+      "image": "ranks/rank06_legend.png"
+    },
+    {
+      "key": "grandmaster",
+      "name": "Grandmaster",
+      "minRating": 3200,
+      "image": "ranks/rank07_grandmaster.png"
+    }
   ]
 }
