@@ -1,19 +1,21 @@
 {
-  "name": "Starstone Guardian Crest — Season 0",
-  "description": "A non-transferable record of ranked activity in Starstone. It grants no in-game effect of any kind. Values are served live from Starstone and change as you play, so this record is not immutable.",
-  "image": "https://raw.githubusercontent.com/starstonecrypto-cell/starstone-releases/main/crest/free.png",
+  "name": "Starstone Guardian Crest — Season Zero",
+  "description": "A non-transferable record of ranked standing in Starstone. It grants no in-game effect of any kind. Rank is earned in rated play and cannot be bought at any price. Values are served by Starstone and change as you climb, so this record is not immutable. Season Zero runs on the DogeOS Chikyū test network.",
+  "image": "https://raw.githubusercontent.com/starstonecrypto-cell/starstone-releases/main/crest/ranks/rank03_silver.png",
   "external_url": "https://starstone.game/crest/season-0",
   "attributes": [
-    { "trait_type": "Season", "value": "season-0" },
-    { "trait_type": "Tier", "value": "Free" },
-    { "trait_type": "Lifetime Renown", "value": 0 },
-    { "trait_type": "Season Renown", "value": 0 },
-    { "trait_type": "Season Wins", "value": 0 }
+    { "trait_type": "Season", "value": "Season Zero" },
+    { "trait_type": "Rank", "value": "Silver" }
   ],
   "properties": {
     "category": "image",
-    "files": [{ "uri": "https://raw.githubusercontent.com/starstonecrypto-cell/starstone-releases/main/crest/free.png", "type": "image/png" }],
-    "metadataVersion": 2,
+    "files": [
+      {
+        "uri": "https://raw.githubusercontent.com/starstonecrypto-cell/starstone-releases/main/crest/ranks/rank03_silver.png",
+        "type": "image/png"
+      }
+    ],
+    "metadataVersion": 3,
     "soulbound": true
   }
 }
