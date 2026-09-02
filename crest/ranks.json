@@ -1,15 +1,15 @@
 {
   "_comment": "Canonical Starstone rank ladder. Thresholds are the CLIENT's, verbatim from MainMenuController.BattleProfileRankTier -- the game is what a player sees every day, so the token defers to it. Trainee is the one deliberate difference: the client treats it as a sub-900 rating band, but the Crest reads peak_rating, which starts at 1000 and only rises, so that band is unreachable on a token. On the Crest it means 'has not placed yet'. Ranks are absolute thresholds, never a position against other players -- a rank that moves because other people played is not a record.",
-  "version": 2,
+  "version": 3,
   "updated": "2026-09-02",
-  "placementGames": 5,
+  "placementGames": 3,
   "ranks": [
     {
       "key": "trainee",
       "name": "Trainee",
       "minRating": null,
       "image": "ranks/rank01_trainee.png",
-      "note": "fewer than 5 rated games"
+      "note": "fewer than 3 rated games"
     },
     {
       "key": "bronze",
